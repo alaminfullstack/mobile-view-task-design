@@ -45,13 +45,26 @@
         font-weight: bold;
       }
 
-      .border-purple{
+      .border-purple {
         border: 1px solid var(--bs-purple);
       }
 
-      .payment-img{
+      .payment-img {
         height: 60px;
         width: 120px;
+      }
+
+      .text-purple {
+        color: var(--bs-purple);
+      }
+
+      .footer {
+        box-shadow: 0px -1px 10px var(--bs-purple);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 150px;
+        margin: 0 auto;
+        left: 30%;
       }
     </style>
   </head>
@@ -62,7 +75,13 @@
         <div class="card-body p-1">
           <div class="d-flex align-items-center">
             <div class="me-2">
-              <a href="javascript::void()" class="btn btn-link">
+              <a
+                href="javascript::void()"
+                class="btn btn-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
+              >
                 <i class="las la-bars bar-icon"></i>
               </a>
             </div>
@@ -138,36 +157,44 @@
       <!-- verify action  -->
       <div class="card bg-purple mb-3">
         <div class="card-body p-2">
-            <div class="d-flex justify-content-between align-items-center ">
-                <p class="mb-0 fs-4 text-white ">Account Status</p>
-                <a href="#" class="btn btn-light">Verify</a>
-            </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0 fs-4 text-white">Account Status</p>
+            <a href="#" class="btn btn-light">Verify</a>
+          </div>
         </div>
       </div>
 
       <!-- two box  -->
 
-      <div class="d-flex  align-items-center mb-3">
-        <div class="card bg-purple me-3 w-75" style="height: 195px;">
-            <div class="card-body p-2 text-center">
-                <div class="py-2 px-2" style="border-bottom: 3px dashed white;">
-                    <p class="text-white mb-1 fs-3">Your Balance</p>
-                    <p class="text-white fw-bold mb-0 fs-3">798933</p>
-                </div>
-                <div class="py-2 px-2">
-                    <p class="text-white mb-1 fs-3">Total Withdraw</p>
-                    <p class="text-white fw-bold mb-0 fs-3">898234</p>
-                </div>
+      <div class="d-flex align-items-center mb-3">
+        <div class="card bg-purple me-3 w-75" style="height: 195px">
+          <div class="card-body p-2 text-center">
+            <div class="py-2 px-2" style="border-bottom: 3px dashed white">
+              <p class="text-white mb-1 fs-3">Your Balance</p>
+              <p class="text-white fw-bold mb-0 fs-3">798933</p>
             </div>
+            <div class="py-2 px-2">
+              <p class="text-white mb-1 fs-3">Total Withdraw</p>
+              <p class="text-white fw-bold mb-0 fs-3">898234</p>
+            </div>
+          </div>
         </div>
-        <div style="height: 195px;">
-            <div class="bg-purple p-2 mb-2 rounded  rounded-2" >
-                <a href="" class="d-block fs-3 px-3 py-4 bg-primary text-white rounded rounded-2 text-decoration-none text-center ">Shop</a>
-            </div>
+        <div style="height: 195px">
+          <div class="bg-purple p-2 mb-2 rounded rounded-2">
+            <a
+              href=""
+              class="d-block fs-3 px-3 py-4 bg-primary text-white rounded rounded-2 text-decoration-none text-center"
+              >Shop</a
+            >
+          </div>
 
-            <div class="bg-purple p-1 mb-2 rounded rounded-2 ">
-                <a href="" class="d-block fs-3 px-3 py-4 bg-primary  text-white rounded  rounded-2 text-decoration-none text-center ">Income</a>
-            </div>
+          <div class="bg-purple p-1 mb-2 rounded rounded-2">
+            <a
+              href=""
+              class="d-block fs-3 px-3 py-4 bg-primary text-white rounded rounded-2 text-decoration-none text-center"
+              >Income</a
+            >
+          </div>
         </div>
       </div>
 
@@ -216,47 +243,141 @@
       <!-- social media  -->
       <div class="mb-3">
         <div class="card border-purple">
-            <div class="card-body p-2 ">
-                <p class="mb-2 fs-3 text-dark">Our Social Media</p>
-                <div class="d-flex g-3 align-items-center ">
-                    <a href="" class="btn btn-danger fs-5 me-2">
-                        <i class="lab la-facebook-f"></i>
-                    </a>
+          <div class="card-body p-2">
+            <p class="mb-2 fs-3 text-dark">Our Social Media</p>
+            <div class="d-flex g-3 align-items-center">
+              <a href="" class="btn btn-danger fs-5 me-2">
+                <i class="lab la-facebook-f"></i>
+              </a>
 
-                    <a href="" class="btn btn-danger fs-5 me-2">
-                        <i class="lab la-twitter"></i>
-                    </a>
+              <a href="" class="btn btn-danger fs-5 me-2">
+                <i class="lab la-twitter"></i>
+              </a>
 
-                    <a href="" class="btn btn-danger fs-5 me-2">
-                        <i class="lab la-youtube"></i>
-                    </a>
+              <a href="" class="btn btn-danger fs-5 me-2">
+                <i class="lab la-youtube"></i>
+              </a>
 
-                    <a href="" class="btn btn-danger fs-5 me-2">
-                        <i class="lab la-linkedin-in"></i>
-                    </a>
+              <a href="" class="btn btn-danger fs-5 me-2">
+                <i class="lab la-linkedin-in"></i>
+              </a>
 
-                    <a href="" class="btn btn-danger fs-5 me-2">
-                        <i class="lab la-telegram-plane"></i>
-                    </a>
-                </div>
+              <a href="" class="btn btn-danger fs-5 me-2">
+                <i class="lab la-telegram-plane"></i>
+              </a>
             </div>
+          </div>
         </div>
       </div>
 
       <!-- payment image  -->
       <div class="card border-purple">
         <div class="card-body p-2">
-            <div class="d-flex align-items-center justify-content-between ">
-                <img src="image/bkash.png"  class="payment-img"/>
-                <img src="image/nagad.png"  class="payment-img"/>
-                <img src="image/rocket.png"  class="payment-img"/>
-            </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <img src="image/bkash.png" class="payment-img" />
+            <img src="image/nagad.png" class="payment-img" />
+            <img src="image/rocket.png" class="payment-img" />
+          </div>
         </div>
       </div>
 
+      <!-- footer  -->
+      <div class="position-fixed bottom-0 mx-auto footer">
+        <div class="d-flex justify-content-around align-items-center">
+          <a href="" class="d-block text-purple fs-1">
+            <i class="las la-home"></i>
+          </a>
 
-
+          <a href="" class="d-block text-purple fs-1">
+            <i class="las la-user-circle"></i>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+      style="width: 300px;"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">
+            <img src="image/web-logo.png" class="logo-img" />
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body bg-light">
+        <div class="mb-3">
+            <button class="btn btn-primary w-100 mb-2">Earnings</button>
+            <div class="d-flex justify-content-around align-items-center ">
+                <div class="" style="width: 100px;">
+                    <div class="bg-warning text-white fw-bold text-center fs-4 py-3" style="border-top-right-radius: 10px; border-top-left-radius: 10px;">
+                        Tk
+                    </div>
+                    <div class="bg-primary text-white fw-bold  text-center fs-3 py-2">
+                        Total
+                    </div>
+                </div>
+
+                <div class="" style="width: 100px;">
+                    <div class="bg-warning text-white fw-bold text-center fs-4 py-3" style="border-top-right-radius: 10px; border-top-left-radius: 10px;">
+                        Tk
+                    </div>
+                    <div class="bg-primary text-white fw-bold  text-center fs-3 py-2">
+                        Today
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Package</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Recharge</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Withdraws</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Transfer Balance</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Sponser List</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Payments</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Notice</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Support</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Change Password</a>
+            </li>
+            <li class="list-group-item">
+                <a href="" class="list-group-item-action bg-white text-decoration-none fs-5 ">Logout</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
