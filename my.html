@@ -7,7 +7,7 @@
       name="viewport"
       content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no"
     />
-    <title>My</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
@@ -19,432 +19,381 @@
       href="https://db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC+Regular"
       rel="stylesheet"
     />
-    <link href="assets/css/slick.css" rel="stylesheet" />
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/jquery.toast.css" rel="stylesheet" />
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "PingFang SC Regular";
+      .bg-purple {
+        background-color: var(--bs-purple);
       }
 
-      html,
-      body {
-        font-family: "PingFang SC Regular";
-      }
-
-      .slider-img {
-        height: 240px;
-      }
-
-      .sm-icon {
-        height: 40px;
-        width: 40px;
-        display: block;
-      }
-
-      .md-icon {
-        height: 90px;
-        width: 90px;
-        display: block;
-      }
-
-      .link {
-        text-decoration: none;
-        text-align: center;
-        display: block;
-      }
-
-      .link-title {
-        color: black;
-        font-size: 12px;
-        padding: 5px 0px;
-      }
-
-      .fs-7 {
-        font-size: 14px;
-      }
-
-      .fs-8 {
-        font-size: 12px;
-      }
-
-      .support {
-        position: fixed;
-        top: 50%;
-        right: 1%;
-      }
-
-      .download {
-        position: fixed;
-        top: 10%;
-        right: 5%;
-        z-index: 9;
-      }
-
-      .footer-icon {
-        height: 30px;
-        width: 30px;
-        display: block;
-      }
-
-      .link-footer-title {
-        color: black;
-        font-size: 10px;
-        padding-top: 5px;
-        padding-bottom: 0px;
-        margin-bottom: 2px;
-      }
-
-      .header-bg {
-        background-image: url("image/user-top.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-
-      .back-icon {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-      }
-
-      .nav-pills .nav-link.active,
-      .nav-pills .show > .nav-link {
-        background: linear-gradient(
-          260deg,
-          rgb(253, 167, 88) 0%,
-          rgb(253, 167, 88) 100%
-        );
-      }
-
-      .btn-orange {
-        background: linear-gradient(
-          260deg,
-          rgb(253, 167, 88) 0%,
-          rgb(253, 167, 88) 100%
-        );
-
-        border-radius: 5px;
+      .bar-icon {
+        font-size: 45px;
         color: white;
-        padding: 5px;
-        width: 40vw;
+        font-weight: bold;
       }
 
-      .plan-title {
-        color: #6d8078;
-        margin-bottom: 7px;
+      .logo-img {
+        width: 100%;
+        height: 50px;
       }
 
-      .plan-img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 5px;
-        margin-top: 0px;
-      }
-
-      .plan-icon {
-        background: linear-gradient(
-          260deg,
-          rgb(253, 167, 88) 0%,
-          rgb(253, 167, 88) 100%
-        );
-
-        border-radius: 50%;
-        padding: 3px;
+      .header-icon {
+        font-size: 45px;
         color: white;
+        font-weight: bold;
       }
 
-      .plan-icon i {
-        font-size: 12px;
+      .border-purple {
+        border: 1px solid var(--bs-purple);
       }
 
-      .table-sm > :not(caption) > * > * {
-        padding: 1px 5px;
-        color: #6d8078;
-      }
-
-      .level-img {
-        height: 25px;
-      }
-
-      .link {
-        text-decoration: none;
-        color: black;
-        font-size: 14px;
-        text-align: start;
-      }
-      .link-icon i {
-        font-size: 14px;
-      }
-
-      .profile-img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 1px solid orange;
-        padding: 5px;
-        text-align: center;
-        background: white;
-        display: block;
-      }
-
-      .profile-img img {
+      .payment-img {
         height: 60px;
-        width: 60px;
-        border-radius: 50%;
+        width: 120px;
+      }
+
+      .text-purple {
+        color: var(--bs-purple);
+      }
+
+      .footer {
+        box-shadow: 0px -1px 10px var(--bs-purple);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 150px;
+        margin: 0 auto;
+        left: 30%;
       }
     </style>
   </head>
-  <body style="background-color: #fff3e9; overflow-x: hidden">
-    <div class="">
-      <div class="">
-        <div class="d-flex align-items-center justify-content-center header-bg">
-          <div class="mt-5">
-            <a href="" class="profile-img">
-              <img src="/user1.3d01c65e.png" />
-            </a>
-          </div>
-        </div>
-
-        <div class="w-100 text-center mt-3">
-          <h3 class="fw-bold">ID:43490013</h3>
-          <p class="">Account: 1759216360</p>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="d-flex">
-            <button class="btn btn-orange me-3">$ 740.00</button>
-            <a href="gift" class="btn btn-orange">Gift Receive</a>
-          </div>
-        </div>
-
-        <div class="px-3 mt-3 mx-3 py-3 bg-white rounded">
-          <table class="table">
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-download.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="" class="link">Download App</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-recharge.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="payment/ledger" class="link">Recharge</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-withdraw.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="withdraw/ledger" class="link">Withdraw</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-information.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="add-bank" class="link">Bank Information</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-revenue.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="history" class="link">My Earning</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-team.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="team" class="link">My Team</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-device.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="payment/ledger" class="link">My Device</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/icon-pwd.png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="login-password" class="link">Password</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/download (1).png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="help-center" class="link">Selfie Channel</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="text-start" style="width: 10%">
-                <img src="image/download (2).png" class="level-img" />
-              </td>
-              <td
-                class="text-start fs-7"
-                style="width: 70%; vertical-align: bottom"
-              >
-                <a href="logout" class="link">Sign Out</a>
-              </td>
-              <td class="text-end" style="width: 20%; vertical-align: bottom">
-                <span class="link-icon">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <div style="height: 80px"></div>
-
-        <div
-          class="bg-white pt-2"
-          style="
-            position: fixed;
-            bottom: 0px;
-            left: 0px;
-            width: 100%;
-            border-top: 1px solid rgb(0 0 0 / 33%);
-          "
-        >
-          <div class="row row-cols-5">
-            <div class="col">
-              <a href="/" class="align-items-center d-flex flex-column link">
-                <img src="image/home.png" class="footer-icon" />
-                <p class="link-footer-title">Home</p>
-              </a>
-            </div>
-            <div class="col">
-              <a href="fund" class="align-items-center d-flex flex-column link">
-                <img src="image/rent.png" class="footer-icon" />
-                <p class="link-footer-title">Rent</p>
-              </a>
-            </div>
-            <div class="col">
+  <body style="overflow-x: hidden" class="bg-light ">
+    <div class="container">
+      <!-- header -->
+      <div class="card my-3 bg-purple">
+        <div class="card-body p-1">
+          <div class="d-flex align-items-center">
+            <div class="me-2">
               <a
-                href="order"
-                class="align-items-center d-flex flex-column link"
+                href="javascript::void()"
+                class="btn btn-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
               >
-                <img src="image/income.png" class="footer-icon" />
-                <p class="link-footer-title">Income</p>
+                <i class="las la-bars bar-icon"></i>
               </a>
             </div>
-            <div class="col">
-              <a
-                href="invite"
-                class="align-items-center d-flex flex-column link"
-              >
-                <img src="image/share.png" class="footer-icon" />
-                <p class="link-footer-title">Share</p>
-              </a>
-            </div>
-            <div class="col">
-              <a href="mine" class="align-items-center d-flex flex-column link">
-                <img src="image/user.png" class="footer-icon" />
-                <p class="link-footer-title">User</p>
-              </a>
+            <div>
+              <div class="d-flex align-items-center justify-content-between">
+                <img src="image/web-logo.png" class="logo-img" />
+                <a href="#">
+                  <i class="las la-sign-out-alt header-icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- one box  -->
+      <div class="card bg-purple mb-3">
+        <div class="card-body p-2 text-center">
+          <div class="py-3 px-2">
+            <p class="text-white mb-1 fs-3">Your Balance</p>
+            <p class="text-white fw-bold mb-0 fs-3">798933</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-danger text-white text-center">
+                <i class="lab la-creative-commons-zero fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                My Income Record
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-warning  text-white text-center">
+                <i class="las la-share-alt fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                My Order Details
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-purple text-white text-center">
+                <i class="las la-wallet fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                Bank Card
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-primary  text-white text-center">
+                <i class="las la-share fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                Share
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-info text-white text-center">
+                <i class="las la-hand-holding-usd fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                My Deposit History
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-dark text-white text-center">
+                <i class="las la-comment-dollar fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                My Withdraw History
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- course action  -->
+      <div class="card border-0 mb-2">
+        <div class="card-body p-2">
+          <a href="" class="d-flex align-items-center justify-content-between d-block text-decoration-none text-dark ">
+            <div class="d-flex align-items-center ">
+              <div class="rounded rounded-2 bg-success text-white text-center">
+                <i class="las la-sign-out-alt fs-3 m-2"></i>
+              </div>
+              <div class="fs-3  ms-3">
+                Logout
+              </div>
+            </div>
+
+            <i class="las la-angle-right fs-3 text-dark fw-bold "></i>
+          </a>
+        </div>
+      </div>
+
+     
+      
+
+      <!-- footer  -->
+      <div class="position-fixed bottom-0 mx-auto footer">
+        <div class="d-flex justify-content-around align-items-center">
+          <a href="" class="d-block text-purple fs-1">
+            <i class="las la-home"></i>
+          </a>
+
+          <a href="" class="d-block text-purple fs-1">
+            <i class="las la-user-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+      style="width: 300px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">
+          <img src="image/web-logo.png" class="logo-img" />
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body bg-light">
+        <div class="mb-3">
+          <button class="btn btn-primary w-100 mb-2">Earnings</button>
+          <div class="d-flex justify-content-around align-items-center">
+            <div class="" style="width: 100px">
+              <div
+                class="bg-warning text-white fw-bold text-center fs-4 py-3"
+                style="
+                  border-top-right-radius: 10px;
+                  border-top-left-radius: 10px;
+                "
+              >
+                Tk
+              </div>
+              <div class="bg-primary text-white fw-bold text-center fs-3 py-2">
+                Total
+              </div>
+            </div>
+
+            <div class="" style="width: 100px">
+              <div
+                class="bg-warning text-white fw-bold text-center fs-4 py-3"
+                style="
+                  border-top-right-radius: 10px;
+                  border-top-left-radius: 10px;
+                "
+              >
+                Tk
+              </div>
+              <div class="bg-primary text-white fw-bold text-center fs-3 py-2">
+                Today
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Home</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Package</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Recharge</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Withdraws</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Transfer Balance</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Sponser List</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Payments</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Notice</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Support</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Change Password</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href=""
+              class="list-group-item-action bg-white text-decoration-none fs-5"
+              >Logout</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-
     <script src="assets/js/jquery.toast.js"></script>
   </body>
 </html>
